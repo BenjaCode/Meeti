@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sidebar{
+    margin-top: 5rem;
+    @include m.tablet { 
+        margin-top: 0;
+    }
+
+    &__contenido{
+        background-color: v.$secundario;
+        color: v.$blanco;
+        padding: 4rem 1rem;
+    }
+    
+    &__meta{
+        color: v.$blanco;
+
+        span{
+            font-weight: 700;
+        }
+    }
+}
